@@ -47,9 +47,9 @@ module "compute" {
   resource_group_name = azurerm_resource_group.rg.name
   vnet_subnet_id      = azurerm_subnet.subnet.id
 
-  vm_os_offer     = "0001-com-ubuntu-server-jammy"
+  vm_os_offer     = "0001-com-ubuntu-server-focal"
   vm_os_publisher = "canonical"
-  vm_os_sku       = "22_04-lts-gen2"
+  vm_os_sku       = "20_04-lts-gen2"
 
   vm_size                       = "Standard_B4ms"
   enable_accelerated_networking = false
