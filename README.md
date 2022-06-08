@@ -12,4 +12,8 @@ Intersting commands to learn!
         * Do: source <(kubectl completion bash)
         * To always enable: echo "source <(kubectl completion bash)" >> $HOME/.bashrc
     
-    Create pod: kubectl create deploy test1 --image=nginx
+    Create pod: kubectl create deploy webserver --image=nginx
+
+    Run pod: kubectl run webserver --image=nginx
+
+    Extract yaml (pod example given here): kubectl get pod <pod-name> -o yaml > pod-definition.yaml
