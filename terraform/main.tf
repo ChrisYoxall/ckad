@@ -39,7 +39,7 @@ module "compute" {
   source  = "Azure/compute/azurerm"
   version = "3.14.0"
 
-  depends_on = [azurerm_subnet.subnet] # Module didn't wait for the networks
+  depends_on = [azurerm_subnet.subnet]
 
   nb_instances = var.instances
   nb_public_ip = var.instances
