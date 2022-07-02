@@ -1,9 +1,13 @@
-# resource group
-export AZ_RESOURCE_GROUP="k8s-test-rg"
+#!/bin/bash
+
+# Cluster name
+export AZ_AKS_CLUSTER_NAME="aks-testing"
+
+# resource group and location
+export AZ_RESOURCE_GROUP="${AZ_AKS_CLUSTER_NAME}-rg"
 export AZ_LOCATION="australiaeast"
 
-# AKS cluster name and local kubeconfig configuration
-export AZ_AKS_CLUSTER_NAME="aks-testing"
+# Cluster local kubeconfig configuration
 export KUBECONFIG=~/.kube/${AZ_AKS_CLUSTER_NAME}
 
 # network infrastructure
