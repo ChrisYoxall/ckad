@@ -14,9 +14,9 @@ Intersting commands to learn!
         * Do: source <(kubectl completion bash)
         * To always enable: echo "source <(kubectl completion bash)" >> $HOME/.bashrc
     
-    Create pod: kubectl create deploy webserver --image=nginx
-
     Run pod: kubectl run webserver --image=nginx
+    
+    Create deployment: kubectl create deploy webserver --image=nginx
 
     Extract yaml (pod example given here): kubectl get pod <pod-name> -o yaml > pod-definition.yaml
 
@@ -30,5 +30,5 @@ Intersting commands to learn!
 
     KodeKloud lab on imperative commands at https://kodekloud.com/topic/imperative-commands/
 
-
+    Handy way to get options for a Kubernetes resource is using explain.  For example: kubectl explain pod --recursive | less
 
