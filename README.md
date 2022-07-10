@@ -26,9 +26,20 @@ Intersting commands to learn!
 
     Expose pod (pods labels will be used as selector): kubectl expose pod redis --port=6379 --target-port=6379 --name redis-service
 
+    Doing a 'kubectl set' allows some existing application resources (image, environment, resources etc.) to be update
+
+    
+    
     Kubenetes documentation for imperative & declarative management is at https://kubernetes.io/docs/tasks/manage-kubernetes-objects/
 
     KodeKloud lab on imperative commands at https://kodekloud.com/topic/imperative-commands/
 
+    
     Handy way to get options for a Kubernetes resource is using explain.  For example: kubectl explain pod --recursive | less
+
+    
+    Search based on label: kubectl get po --selector app=db    Group multiple selectors using commas.
+
+    Get status, history etc on rollouts: kubectl rollout status daemonset/foo
+
 
